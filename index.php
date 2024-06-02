@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>有限会社テスト</title>
-        <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/mystyle.css">
+        <?php wp_head(); ?>
     </head>
     <body>
         <header>
@@ -21,7 +22,7 @@
                         <li>会社案内</li>
                         <li>お知らせ</li>
                         <li><div class="contact">
-                                <img src="img/kadai4/contact.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/kadai4/contact.png">
                             <p>CONTACT</p>
                         </div> </li>   
                     </ul>  
@@ -51,9 +52,9 @@
                 <p>テキストテキストテキスト</p>
                 <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 <ul class="gallery">
-                    <li><img src="img/kadai4/product_blue.png"></li>
-                    <li><img src="img/kadai4/produce_yellow.png"></li>
-                    <li><img src="img/kadai4/product_green.png"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/img/kadai4/product_blue.png"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/img/kadai4/produce_yellow.png"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/img/kadai4/product_green.png"></li>
                 </ul>
                 <div class="view">
                     <a>VIEW MORE </a>
@@ -64,7 +65,7 @@
                 <h2>SERVICE</h2>
                 <ul>
                     <li>
-                        <img src="img/kadai4/service_white.png">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/kadai4/service_white.png">
                         <h3>テストの強みとは</h3>
                         <p>テキストテキストテキストテキストテキストテキストテキスト</p>
                         <p>テキストテキストテキストテキスト</p>
@@ -74,7 +75,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="img/kadai4/service_green.png">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/kadai4/service_green.png">
                         <h3>テキスト、及びテキスト</h3>
                         <p>テキストテキストテキストテキストテキストテキストテキスト</p>
                         <p>テキストテキストテキストテキスト</p>
@@ -114,7 +115,7 @@
                 <ul class="news_list">
                     <li>
                         <div>
-                            <img src="img/kadai4/news_finger.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/kadai4/news_finger.png">
                         </div>
                         <div>
                             <h4>2023.07.03　お知らせタイトルが入ります。お知らせタイトルが入ります。</h4>
@@ -125,7 +126,7 @@
                     </li>
                     <li>
                         <div>
-                            <img src="img/kadai4/news_blue.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/kadai4/news_blue.png">
                         </div>
                         <div>
                             <h4>2023.07.03　お知らせタイトルが入ります。お知らせタイトルが入ります。</h4>
@@ -136,7 +137,7 @@
                     </li>
                     <li>
                         <div>
-                            <img src="img/kadai4/news_sky.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/kadai4/news_sky.png">
                         </div>
                         <div>
                             <h4>2023.07.03　お知らせタイトルが入ります。お知らせタイトルが入ります。</h4>
@@ -147,7 +148,7 @@
                     </li>
                     <li>
                         <div>
-                            <img src="img/kadai4/news_hand.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/kadai4/news_hand.png">
                         </div>
                         <div>
                             <h4>2023.07.03　お知らせタイトルが入ります。お知らせタイトルが入ります。</h4>
@@ -167,7 +168,7 @@
                     <h3 class="number">Tel.　000-0000-0000</h3>
                     <h4 class="hours">【営業時間】 8:00～17:00</h4>   
                 </div>
-                <img src="img/kadai4/contact_bg.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/kadai4/contact_bg.png">
             </div>
         </main>
         <footer class="footer">
@@ -209,5 +210,6 @@
                 </div>
                 <li><div class="arrow-round-white arrow-top-white"></div></li>
             </ul>
+        <?php wp_footer(); ?>    
     </body>
 </html>
